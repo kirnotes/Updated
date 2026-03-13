@@ -158,7 +158,44 @@
           </div>
         </div>
       </section>
+<section id="cutoff" class="panel">
+  <h2>Cutoff Clock (US)</h2>
+  <p class="sub">Check whether box cancellation or modifications are still allowed for a selected delivery date.</p>
 
+  <div class="analytics-grid">
+    <div class="subpanel">
+      <h3>Current Local Time</h3>
+      <div id="cutoffCurrentTime" class="kpi-value">—</div>
+      <div class="kpi-hint">Eastern Time</div>
+    </div>
+
+    <div class="subpanel">
+      <h3>Scheduled Delivery Date</h3>
+      <input id="cutoffDeliveryDate" type="date" />
+      <div class="hint">Choose the customer's scheduled delivery date.</div>
+    </div>
+  </div>
+
+  <div class="subpanel" style="margin-top:14px;">
+    <h3>Brand Status</h3>
+    <div id="cutoffBrandCards" class="recent-list"></div>
+  </div>
+
+  <div class="subpanel" style="margin-top:14px;">
+    <h3>Brand Delivery Schedule</h3>
+    <div id="deliveryScheduleTable"></div>
+  </div>
+
+  <div class="subpanel" style="margin-top:14px;">
+    <h3>Customer Cutoff Rules</h3>
+    <div id="cutoffRulesTable"></div>
+  </div>
+
+  <div class="subpanel" style="margin-top:14px;">
+    <h3>Actions Permitted During Grace Period</h3>
+    <div id="gracePeriodTable"></div>
+  </div>
+</section>
       <section id="cloudDashboard" class="panel">
         <h2>Team Dashboard</h2>
         <p class="sub">Live analytics from Google Sheets through Apps Script.</p>
@@ -216,4 +253,5 @@
   <link rel="stylesheet" href="./styles.css" />
 <script type="module" src="./app.js"></script>
 </body>
+
 </html>
