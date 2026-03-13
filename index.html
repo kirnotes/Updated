@@ -162,38 +162,41 @@
   <h2>Cutoff Clock (US)</h2>
   <p class="sub">Check whether box cancellation or modifications are still allowed for a selected delivery date.</p>
 
-  <div class="analytics-grid">
-    <div class="subpanel">
-      <h3>Current Local Time</h3>
-      <div id="cutoffCurrentTime" class="kpi-value">—</div>
-      <div class="kpi-hint">Eastern Time</div>
+  <div class="cutoff-top">
+    <div class="cutoff-time-card">
+      <div class="cutoff-time-label">Current Local Time</div>
+      <div id="cutoffCurrentTime" class="cutoff-time-value">—</div>
+      <div class="cutoff-time-zone">Eastern Daylight Time</div>
     </div>
 
-    <div class="subpanel">
-      <h3>Scheduled Delivery Date</h3>
-      <input id="cutoffDeliveryDate" type="date" />
-      <div class="hint">Choose the customer's scheduled delivery date.</div>
+    <div class="cutoff-date-card">
+      <div class="cutoff-date-label">Scheduled Delivery Date</div>
+      <div id="cutoffSelectedLabel" class="cutoff-date-title">—</div>
+      <div id="cutoffQuickDates" class="cutoff-date-picker"></div>
+      <div class="row" style="margin-top:10px;">
+        <input id="cutoffDeliveryDate" type="date" />
+      </div>
     </div>
   </div>
 
-  <div class="subpanel" style="margin-top:14px;">
+  <div class="subpanel">
     <h3>Brand Status</h3>
-    <div id="cutoffBrandCards" class="recent-list"></div>
+    <div id="cutoffBrandCards" class="cutoff-brand-list"></div>
   </div>
 
   <div class="subpanel" style="margin-top:14px;">
     <h3>Brand Delivery Schedule</h3>
-    <div id="deliveryScheduleTable"></div>
+    <div id="deliveryScheduleTable" class="cutoff-table-wrap"></div>
   </div>
 
   <div class="subpanel" style="margin-top:14px;">
     <h3>Customer Cutoff Rules</h3>
-    <div id="cutoffRulesTable"></div>
+    <div id="cutoffRulesTable" class="cutoff-table-wrap"></div>
   </div>
 
   <div class="subpanel" style="margin-top:14px;">
     <h3>Actions Permitted During Grace Period</h3>
-    <div id="gracePeriodTable"></div>
+    <div id="gracePeriodTable" class="cutoff-table-wrap"></div>
   </div>
 </section>
       <section id="cloudDashboard" class="panel">
@@ -253,4 +256,5 @@
 </body>
 
 </html>
+
 
