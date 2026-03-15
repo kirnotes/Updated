@@ -326,7 +326,6 @@ function loadSidebarState() {
   const hidden = getSidebarHidden();
   setSidebarHidden(Boolean(hidden));
 }
-}
 
 function setActiveNav() {
   const links = document.querySelectorAll(".nav a");
